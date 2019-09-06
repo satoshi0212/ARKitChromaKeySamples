@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChromaKey002" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sne-Q5-imi">
+                                <rect key="frame" x="47.666666666666657" y="76" width="280" height="210"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Sne-Q5-imi" secondAttribute="height" multiplier="4:3" id="DE1-bi-bMw"/>
+                                    <constraint firstAttribute="width" constant="280" id="Z8C-8u-bJx"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CrI-c5-6LS">
+                                <rect key="frame" x="47.666666666666657" y="302" width="280" height="210"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="dqU-EE-aft"/>
+                                    <constraint firstAttribute="width" secondItem="CrI-c5-6LS" secondAttribute="height" multiplier="4:3" id="uRd-8l-0as"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JFK-fe-Jeq">
+                                <rect key="frame" x="47.666666666666657" y="528" width="280" height="210"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JFK-fe-Jeq" secondAttribute="height" multiplier="4:3" id="WAw-eQ-V9U"/>
+                                    <constraint firstAttribute="width" constant="280" id="pz5-I5-5Z3"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CrI-c5-6LS" firstAttribute="top" secondItem="Sne-Q5-imi" secondAttribute="bottom" constant="16" id="3eU-aW-5XK"/>
+                            <constraint firstItem="Sne-Q5-imi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="9eR-dn-02k"/>
+                            <constraint firstItem="CrI-c5-6LS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kqs-xJ-oul"/>
+                            <constraint firstItem="JFK-fe-Jeq" firstAttribute="top" secondItem="CrI-c5-6LS" secondAttribute="bottom" constant="16" id="QmV-tJ-jHg"/>
+                            <constraint firstItem="JFK-fe-Jeq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aqb-U2-kXS"/>
+                            <constraint firstItem="Sne-Q5-imi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j16-e3-cHP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="CrI-c5-6LS" id="lnc-8d-sUK"/>
+                        <outlet property="imageView" destination="Sne-Q5-imi" id="a5u-OP-6l3"/>
+                        <outlet property="resultImageView" destination="JFK-fe-Jeq" id="Hqo-uX-0TH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
